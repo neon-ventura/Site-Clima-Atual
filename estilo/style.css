@@ -1,10 +1,35 @@
 *{
     margin: 0;
     padding: 0;
-    
     font-family: Arial, Helvetica, sans-serif;
 }
 
 body{
-    background-image: url('images\paisagens\pexels-pixabay-235621.jpg');
+    background-image: linear-gradient(to right, #006691, #2499c7, #40cfff, #94e7ff, #cdffff);
+}
+
+header {
+    text-align: center;
+    padding: 40px;
+}
+
+.conteudo{
+    display: flex;
+    width: 100vw;
+    height: 75vh;
+    justify-content: center;
+    align-items: center;
+}
+
+section{
+    padding: 30px;
+    border-radius: 20px;
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.349);
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
 }

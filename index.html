@@ -1,24 +1,36 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clima Agora</title>
     <link rel="stylesheet" href="estilo/style.css">
 </head>
+
 <body>
-    <img src="images/paisagens/pexels-daniel-emmerick-15790116.jpg" alt="paisagem-padrao" class="paisagem-pd">
     <header>
-        <h1>Clima Agora</h1>
+    <h1>Clima Agora</h1>
     </header>
 
-    <section>
-        <div class="inputs">
-            <label for="regiao">Cidade/Estado:</label>
-            <input type="text" name="regiao" id="regiao">
-            <label for="pais">País:</label>
-            <input type="text" name="pais" id="pais">
-        </div>
-    </section>
+    <div class="conteudo">
+        <section>
+            <div class="inputs">
+                <label for="regiao">Cidade/Estado:</label>
+                <input type="text" name="regiao" id="regiao">
+                <label for="pais">País:</label>
+                <input type="text" name="pais" id="pais">
+                <button class="btn">Enviar</button>
+            </div>
+            <div class="respostas">
+                <h2 class="regiao-pais">São Paulo / BR</h2>
+                <p class="temp">Temperatura:</p>
+                <p class="temp-max">Temperatura Max:</p>
+                <p class="temp-min">Temperatura Min:</p>
+            </div>
+        </section>
+    </div>
+    <script src="js/main.js"></script>
 </body>
+
 </html>
