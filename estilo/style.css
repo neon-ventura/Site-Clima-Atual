@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -5,12 +7,21 @@
 }
 
 body{
-    background-image: linear-gradient(to right, #006691, #2499c7, #40cfff, #94e7ff, #cdffff);
+    background: linear-gradient(to right, #2b5876, #4e4376);
 }
 
 header {
     text-align: center;
     padding: 40px;
+}
+
+h1{
+    font-family: 'Silkscreen', sans-serif;
+    color: #2D2A75;
+    background-color: #2A7563;
+    border-radius: 15px;
+    padding: 5px;
+    box-shadow: 1px 2px 2px black;
 }
 
 .conteudo{
@@ -24,12 +35,52 @@ header {
 section{
     padding: 30px;
     border-radius: 20px;
+    box-shadow: 1px 3px 3px;
     width: 400px;
-    background-color: rgba(255, 255, 255, 0.349);
+    background-color: rgba(255, 255, 255, 0.265);
 }
 
 .inputs{
     display: flex;
     flex-direction: column;
+    align-items: center;
     font-weight: bold;
+}
+
+input{
+    width: 200px;
+    font-family: 'Silkscreen', sans-serif;
+    font-size: 1.2rem;
+    background-color: #2a7564ab;
+    border: 1px solid black;
+    border-radius: 5px;
+    outline: none;
+}
+
+label{
+    color: #2D2A75;
+    font-family: 'Silkscreen', sans-serif;
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+.btn{
+    margin: 20px;
+    padding: 10px;
+    font-family: 'Silkscreen', sans-serif;
+    font-weight: bold;
+    background-color:#752B2A;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 2px 2px 0px black;
+}
+
+.regiao-pais{
+    text-align: center;
+}
+
+.temp{
+    text-align: center;
+    padding: 20px;
+    font-size: 2rem;
 }

@@ -18,6 +18,7 @@ const apiKey = 'a51cd2def18a2957f32bb6b330283944'
 btn.addEventListener('click', () => {
 if (regiao.value === ''|| pais.value === '') {
     console.error('COMPLETE OS CAMPOS ABERTOS')
+    alert('COMPLETE OS CAMPOS EM BRANCOS')
     return
 }
 
@@ -29,6 +30,8 @@ fetch(api)
 .then(res => {
     if (!res.ok) {
         console.error("ERROR, PORFAVOR PONHA UMA CIDADE/ESTADO OU PAÍS VÁLIDO")
+        alert('Informações erradas, [PREENCHA O CAMPO CORRETAMENTE]')
+        location.reload()
     }
     return res.json()
 })
@@ -40,8 +43,8 @@ return
 // --- Informações para a tela vindo da API ---
 
 function mostrarNaTela(data){
-    h2.innerHTML = `${regiao.value} / ${pais.value}`
-    temp.innerHTML = `Temperatura: ${Math.round(data.temp)} ºC`
+    h2.innerHTML = `${regiao.value} / ${pais.value.toUpperCase()}`
+    temp.innerHTML = `${Math.round(data.temp)} ºC`
     tempMax.innerHTML = `Temperatura Max: ${data.temp_max} ºC`
     tempMin.innerHTML = `Temperatura Min: ${data.temp_min} ºC`
     console.log(data)
@@ -58,7 +61,7 @@ function apiSP() {
 }
 
 function mostrarNaTelaSP(data) {
-    temp.innerHTML = `Temperatura: ${Math.round(data.temp)} ºC`
+    temp.innerHTML = `${Math.round(data.temp)} ºC`
     tempMax.innerHTML = `Temperatura Max: ${data.temp_max} ºC`
     tempMin.innerHTML = `Temperatura Min: ${data.temp_min} ºC`
 }
